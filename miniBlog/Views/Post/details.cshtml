@@ -1,0 +1,64 @@
+﻿@using miniBlog.Models
+@model miniBlog.Models.Post
+
+
+@{
+    ViewBag.Title = "details";
+    
+}
+
+<h2>@Model.Title</h2>
+<div class="posttitle">
+    <a href="@Href("~/Post/Details/" + @Model.Id)">@Model.Title</a>
+</div>
+<div class="postcontainer">
+<div class="datetab">
+    @{
+        DateTime time = (DateTime)@Model.Time;
+        
+            
+    }
+    <div class="month">@time.ToString("MMM").ToUpper()</div>
+    <div class="date">@time.ToString("DD").ToUpper()</div>
+</div>
+    <div class=" contentBody">
+        <div class="postBody">
+            @Html.Encode(@Model.Body).Replace("\n", "<br/>")
+        </div>
+    </div>
+<div class="commentssection">
+    @foreach (Comment comment in @Model.Comments.OrderBy(x=>x.Time))
+    {
+        <div>
+            @comment.Time
+        </div>
+        <div>
+            @comment.Name
+        </div>
+        <div>
+            @comment.Body
+        </div>
+
+    }
+    @using (Html.BeginForm("UpdatePost", "Post", FormMethod.Post, null))
+    {
+
+        <input type="hidden" name="id" value="@Model.Id"/>
+
+        <div>
+            @Html.TextBox("Enter Name", "Name")
+
+        </div>
+        <div>
+            @Html.TextArea("Enter email", "Email")
+
+        </div>
+        <div>
+            @Html.TextArea("Comment", "comments")
+
+        </div>
+        <input type="submit" value="Submit"/>
+    }
+
+</div>
+    </div>

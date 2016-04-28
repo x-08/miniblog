@@ -1,0 +1,21 @@
+﻿@model miniBlog.Models.Comment
+@using (Html.BeginForm("PostComment", "Post", FormMethod.Post, null))
+            {
+    <input type="hidden" name="id" value="@post.Id" />
+
+
+
+    <div>
+        @Html.TextBoxFor(x => x.Name, new { @placeholder = "" })
+
+    </div>
+    <div>
+        @Html.TextBoxFor(x=>x.Email,new {@placeholder = "Email"})
+
+    </div>
+    <div>
+        @Html.TextAreaFor(x=>x.Body,new{@placeholder=""})
+
+    </div>
+    <input type="submit" value="Submit" />
+            }

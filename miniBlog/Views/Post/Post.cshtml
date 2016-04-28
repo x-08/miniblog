@@ -1,0 +1,59 @@
+﻿@model miniBlog.Models.Post
+@using miniBlog.Models
+
+
+@{
+    ViewBag.Title = "Post";
+}
+
+<h2>Post</h2>
+@helper Render(Post post, System.Web.Mvc.HtmlHelper htmlHelper,bool isAdmin, Boolean showComents)
+{
+    <div class="posttitle"><a href="@Href("~/Post/Details/" + post.Id)">@post.Title</a>
+    </div>
+    <div class="postcontainer">
+        <div class="datetab">
+            <div class="month">@post.Time.ToString("MMM").ToUpper()</div>
+            <div class="date">@post.Time.ToString("DD").ToUpper()</div>
+        </div>
+        <div class=" contentBody">
+            <div class="postBody">
+                @Html.Encode(@post.Body).Replace("\n","<br/>")
+            </div>
+        </div>
+        <div class="commentssection">
+            @foreach (Comment comment in post.Comments.OrderBy(x => x.Time))
+            {
+                <div>
+                    @comment.Time
+                </div>
+                <div>
+                    @comment.Name
+                </div>
+                <div>
+                    @comment.Body
+                </div>
+                
+            }
+            @using (Html.BeginForm("UpdatePost", "Post", FormMethod.Post, null))
+            {
+
+
+
+                <div>
+                    @Html.TextBox("Enter Name", "Name")
+
+                </div>
+                <div>
+                    @Html.TextArea("Enter email", "Email")
+
+                </div>
+                <div>
+                    @Html.TextArea("Comment", "comments")
+
+                </div>
+                <input type="submit" value="Submit"/>
+            }
+
+        </div>
+    </div>

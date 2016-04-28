@@ -1,0 +1,117 @@
+﻿@using miniBlog.Models
+
+@model miniBlog.Models.IndexViewModel
+
+
+
+@{
+    ViewBag.Title = "Index";
+    
+}
+
+@foreach (Post post in Model.Posts)
+{
+   
+    <div class="posttitle">
+        <a href="@Href("~/Post/Details/" + post.Id)">@post.Title</a>
+    </div>
+    <div class="postcontainer">
+        <div class="datetab">
+            <div class="month">@post.Time.ToString().ToUpper()</div>
+            @*<div class="date">@post.Time.ToString("DD").ToUpper()</div>*@
+        </div>
+        <div class=" contentBody">
+            <div class="postBody">
+                
+@Html.Raw((@post.Body).Replace(Environment.NewLine, "<br />"))
+
+                @*@Html.Encode(@post.Body).Replace("\n", "<br/>")*@
+                
+            </div>
+        </div>
+        @if (ViewBag.isAdmin)
+        {
+            <div class="Delete">
+                <a href="@Href("~/Post/Delete/" + post.Id)">Delete Post</a>
+            </div>
+        }
+        
+        <div class="commentssection">
+            @foreach (Comment comment in post.Comments.OrderBy(x => x.Time))
+            {
+                <div>
+                    @comment.Time
+                </div>
+                <div>
+                    @comment.Name
+                </div>
+                <div>
+                    @comment.Body
+                </div>
+    if (ViewBag.isAdmin)
+    {
+        <div class="Delete">
+            <a href="@Href("~/Post/DeleteComment/" + @comment.Id)">Delete Comment</a>
+        </div>
+    }
+
+
+            }
+            @using (Html.BeginForm("PostComment", "Post", FormMethod.Post, null))
+            {
+                <input type="hidden" name="id" value="@post.Id" />
+
+                
+
+                <div>
+                    @Html.TextBox("name","name")
+
+                </div>
+                <div>
+                    @Html.TextBox("email","email")
+
+                </div>
+                <div>
+                    @Html.TextArea("body","body")
+
+                </div>
+                <input type="submit" value="Submit" />
+            }
+
+        </div>
+    </div>
+
+
+
+}
+   
+
+@{
+        int pagenumber = ViewBag.pageNumber;
+        if (ViewBag.isPreviousLinkAvailable)
+        {
+            int previousPageNumber = pagenumber - 1;
+            //Html.RenderAction("Post", "Index", previousPageNumber);
+            <div>
+                @Html.ActionLink("Previous", "Index", "Post", new { id = previousPageNumber }, null)
+            </div>
+
+
+        }
+
+    
+
+
+    
+        if (ViewBag.isNextLinkAvailable)
+        {
+            int nextPageNumber = pagenumber + 1;
+            //Html.RenderAction("Post", "Index", previousPageNumber);
+            <div>
+                @Html.ActionLink("Next", "Index", "Post", new { id = nextPageNumber }, null)
+            </div>
+
+        }
+
+    }
+

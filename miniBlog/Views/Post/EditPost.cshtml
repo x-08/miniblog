@@ -1,0 +1,51 @@
+﻿@model miniBlog.Models.Post
+
+@{
+    ViewBag.Title = "EditPost";
+}
+
+<h2>EditPost</h2>
+@*<form action="@Href("/Post/UpdatePost")" method="POST" id="postForm">
+    @if (Model.Id != -1)
+    {
+        <input type="hidden" name="id" value="@Model.Id" />
+    }
+    @{
+        DateTime time = (DateTime) (Model.Time.HasValue ? Model.Time : DateTime.Now);
+        Model.Time = time;
+    }
+
+    <input type="text" id="dateTime" value="@time " placeholder="@time" />
+    <textarea name="body" rows="1" cols="1" placeholder="title">@Model.Title</textarea>
+    <textarea name="body" rows="10" cols="80" placeholder="Content">@Model.Body</textarea>
+    <input type="submit" name="submit" value="submit" />*@
+@*@using HTML.beg*@
+@*</form>*@
+  
+@using (Html.BeginForm("UpdatePost","Post",FormMethod.Post,null))
+{
+    if (Model.Id != -1)
+    {
+        <input type="hidden" name="id" value="@Model.Id" />
+    }
+    {
+        DateTime time = (DateTime) (Model.Time.HasValue ? Model.Time : DateTime.Now);
+        Model.Time = time;
+    }
+    <div>
+        @Html.TextBoxFor(x => x.Time)
+
+    </div>
+    <div>
+        @Html.TextBoxFor(x => x.Title, new { @placeholder = "Title" })
+       
+    </div>
+    <div>
+        @Html.TextAreaFor(x => x.Body, 10, 80, new { @placeholder = "Type Content" })
+       
+    </div>    
+    
+    
+    
+    <input type="submit" value="Submit" />
+}

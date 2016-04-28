@@ -1,0 +1,172 @@
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\miniBlog.dll.config
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\miniBlog.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\miniBlog.pdb
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\Antlr3.Runtime.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\DotNetOpenAuth.AspNet.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\DotNetOpenAuth.Core.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\DotNetOpenAuth.OAuth.Consumer.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\DotNetOpenAuth.OAuth.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\DotNetOpenAuth.OpenId.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\EntityFramework.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\Microsoft.Data.Edm.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\Microsoft.Data.OData.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\Microsoft.Web.Infrastructure.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\Microsoft.Web.WebPages.OAuth.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\Newtonsoft.Json.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\System.Net.Http.Formatting.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\System.Spatial.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\System.Web.Helpers.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\System.Web.Http.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\System.Web.Http.OData.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\System.Web.Http.WebHost.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\System.Web.Mvc.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\System.Web.Optimization.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\System.Web.Razor.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\System.Web.WebPages.Deployment.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\System.Web.WebPages.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\System.Web.WebPages.Razor.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\WebGrease.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\WebMatrix.Data.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\WebMatrix.WebData.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\EntityFramework.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\Newtonsoft.Json.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\System.Net.Http.Formatting.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\System.Web.Helpers.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\System.Web.Http.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\System.Web.Http.WebHost.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\System.Web.Mvc.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\System.Web.Razor.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\System.Web.WebPages.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\System.Web.WebPages.Deployment.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\System.Web.WebPages.Razor.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\WebMatrix.Data.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\Microsoft.Web.WebPages.OAuth.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\WebMatrix.WebData.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\DotNetOpenAuth.AspNet.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\DotNetOpenAuth.Core.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\DotNetOpenAuth.OAuth.Consumer.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\DotNetOpenAuth.OAuth.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\DotNetOpenAuth.OpenId.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\System.Web.Http.OData.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\Microsoft.Data.Edm.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\Microsoft.Data.OData.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\System.Spatial.xml
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\de\Microsoft.Data.Edm.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\es\Microsoft.Data.Edm.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\fr\Microsoft.Data.Edm.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\it\Microsoft.Data.Edm.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\ja\Microsoft.Data.Edm.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\ko\Microsoft.Data.Edm.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\ru\Microsoft.Data.Edm.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\de\Microsoft.Data.OData.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\es\Microsoft.Data.OData.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\fr\Microsoft.Data.OData.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\it\Microsoft.Data.OData.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\ja\Microsoft.Data.OData.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\ko\Microsoft.Data.OData.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\ru\Microsoft.Data.OData.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\de\System.Spatial.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\es\System.Spatial.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\fr\System.Spatial.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\it\System.Spatial.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\ja\System.Spatial.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\ko\System.Spatial.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\ru\System.Spatial.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\zh-Hans\System.Spatial.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\bin\zh-Hant\System.Spatial.resources.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\obj\Debug\miniBlog.csprojResolveAssemblyReference.cache
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\obj\Debug\miniBlog.dll
+c:\users\x\documents\visual studio 2013\Projects\miniBlog\miniBlog\obj\Debug\miniBlog.pdb
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\miniBlog.dll.config
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\miniBlog.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\miniBlog.pdb
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\Antlr3.Runtime.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\DotNetOpenAuth.Core.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\EntityFramework.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\Microsoft.Data.Edm.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\Microsoft.Data.OData.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\Newtonsoft.Json.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\System.Net.Http.Formatting.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\System.Spatial.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\System.Web.Helpers.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\System.Web.Http.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\System.Web.Http.OData.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\System.Web.Http.WebHost.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\System.Web.Mvc.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\System.Web.Optimization.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\System.Web.Razor.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\System.Web.WebPages.Deployment.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\System.Web.WebPages.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\System.Web.WebPages.Razor.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\WebGrease.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\WebMatrix.Data.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\WebMatrix.WebData.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\EntityFramework.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\Newtonsoft.Json.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\System.Net.Http.Formatting.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\System.Web.Helpers.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\System.Web.Http.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\System.Web.Http.WebHost.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\System.Web.Mvc.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\System.Web.Razor.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\System.Web.WebPages.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\System.Web.WebPages.Deployment.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\System.Web.WebPages.Razor.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\WebMatrix.Data.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\WebMatrix.WebData.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\DotNetOpenAuth.Core.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\System.Web.Http.OData.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\Microsoft.Data.Edm.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\Microsoft.Data.OData.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\System.Spatial.xml
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\de\System.Spatial.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\es\System.Spatial.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\fr\System.Spatial.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\it\System.Spatial.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\ja\System.Spatial.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\ko\System.Spatial.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\ru\System.Spatial.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\obj\Debug\miniBlog.csprojResolveAssemblyReference.cache
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\obj\Debug\miniBlog.dll
+C:\Users\X\Documents\GitHub\miniblog\miniBlog\obj\Debug\miniBlog.pdb
