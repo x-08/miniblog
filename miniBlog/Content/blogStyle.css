@@ -1,0 +1,13 @@
+﻿body {
+    
+}
+
+.fill-screen {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+   s   
+}
