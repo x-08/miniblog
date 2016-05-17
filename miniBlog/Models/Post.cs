@@ -7,6 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.ComponentModel.DataAnnotations;
+using System.Web.Mvc;
+
 namespace miniBlog.Models
 {
     using System;
@@ -22,6 +25,7 @@ namespace miniBlog.Models
         public int Id { get; set; }
         public string Title { get; set; }
         public Nullable<System.DateTime> Time { get; set; }
+        
         public string Body { get; set; }
     
         public virtual ICollection<Comment> Comments { get; set; }

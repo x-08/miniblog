@@ -21,31 +21,41 @@
     <input type="submit" name="submit" value="submit" />*@
 @*@using HTML.beg*@
 @*</form>*@
-  
+
+
+<script src="~/Content/dist/js/medium-editor.min.js"></script>
+<link href="~/Content/dist/css/medium-editor.min.css" rel="stylesheet" />
+<link href="~/Content/dist/css/themes/default.min.css" rel="stylesheet" />
+
 @using (Html.BeginForm("UpdatePost","Post",FormMethod.Post,null))
 {
+    var timeformated = string.Empty;
+    var dateformated = string.Empty;
     if (Model.Id != -1)
     {
-        <input type="hidden" name="id" value="@Model.Id" />
+        <input type="hidden" name="id" value="@Model.Id"/>
+
     }
     {
-        DateTime time = (DateTime) (Model.Time.HasValue ? Model.Time : DateTime.Now);
+        DateTime time = (DateTime)(Model.Time.HasValue ? Model.Time : DateTime.Now);
         Model.Time = time;
+        <input type="hidden" name="time" value="@Model.Time" />
+      
+
     }
     <div>
-        @Html.TextBoxFor(x => x.Time)
+        @Html.TextBoxFor(x => x.Title, new { @placeholder = "Title" ,@class = "editableTitle"})
+        
+       
+    </div>
+    <div>
+        @Html.TextAreaFor(x => x.Body, 10, 80, new { @placeholder = "Type Content", @class = "editable" })
+        <script>var editor = new MediumEditor('.editable');</script>
+               
+    </div>
+    @*<div class="editable"></div>*@
+    
 
-    </div>
-    <div>
-        @Html.TextBoxFor(x => x.Title, new { @placeholder = "Title" })
-       
-    </div>
-    <div>
-        @Html.TextAreaFor(x => x.Body, 10, 80, new { @placeholder = "Type Content" })
-       
-    </div>    
-    
-    
-    
+
     <input type="submit" value="Submit" />
 }

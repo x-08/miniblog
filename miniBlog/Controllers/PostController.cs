@@ -17,25 +17,25 @@ namespace miniBlog.Controllers
         private blogEntities _modelEntities = new blogEntities();
         private const int postPerPage = 4;
 
-        public ActionResult Index(int ? id)
+        public ActionResult Index(int? id)
         {
-            int p = id??0 ;
+            int p = id ?? 0;
             IEnumerable<Post> posts = (from post in _modelEntities.Posts
                 where post.Time < DateTime.Now
                 orderby post.Time descending
-                select post).Skip(p * postPerPage).Take(postPerPage);
+                select post).Skip(p*postPerPage).Take(postPerPage);
             ViewBag.isPreviousLinkAvailable = p > 0;
             ViewBag.isNextLinkAvailable = posts.Count() > postPerPage - 1;
             ViewBag.pageNumber = p;
             ViewBag.isAdmin = IsAdmin;
             var indexModelObject = new IndexViewModel {Posts = posts};
-            
+
             return View(indexModelObject);
         }
 
         [ValidateInput(false)]
         [HttpPost]
-        public ActionResult UpdatePost(int ? id, string title, DateTime ? time, string body )
+        public ActionResult UpdatePost(int? id, string title, DateTime? time, string body)
         {
             if (!IsAdmin)
             {
@@ -46,6 +46,7 @@ namespace miniBlog.Controllers
             post.Title = title;
             post.Time = DateTime.Now;
             post.Body = body;
+            ViewBag.isAdmin = IsAdmin;
 
             if (!id.HasValue)
             {
@@ -57,15 +58,15 @@ namespace miniBlog.Controllers
         }
 
         [ValidateInput(false)]
-        public ActionResult PostComment(int id, string name,string email, string body)
+        public ActionResult PostComment(int id, string name, string email, string body)
         {
-            
+
             Post post = GetPost(id);
-           
-            Comment comment = new Comment {Name = name,Email = email,Body = body,PostId =id ,Time = DateTime.Now};
+
+            Comment comment = new Comment {Name = name, Email = email, Body = body, PostId = id, Time = DateTime.Now};
             _modelEntities.Comments.Add(comment);
             _modelEntities.SaveChanges();
-            return RedirectToAction("Details",new{id = id});
+            return RedirectToAction("Details", new {id = id});
 
 
 
@@ -79,8 +80,9 @@ namespace miniBlog.Controllers
                 Post post = GetPost(id);
                 _modelEntities.Posts.Remove(post);
                 _modelEntities.SaveChanges();
-               
-                
+
+
+
             }
             return RedirectToAction("Index");
         }
@@ -92,14 +94,16 @@ namespace miniBlog.Controllers
                 Comment comment = _modelEntities.Comments.First(x => x.Id == id);
                 _modelEntities.Comments.Remove(comment);
                 _modelEntities.SaveChanges();
-                
+
             }
             return RedirectToAction("Index");
         }
 
-        public ActionResult Details(int id )
+        public ActionResult Details(int id)
         {
+
             Post post = GetPost(id);
+            ViewBag.isAdmin = IsAdmin;
             return View(post);
 
 
@@ -112,28 +116,29 @@ namespace miniBlog.Controllers
                 return RedirectToAction("Index");
             }
             Post post = GetPost(id);
- 
-            return View("EditPost",post);
+
+            return View("EditPost", post);
         }
+
         public bool IsAdmin
         {
-            get { return Session["IsAdmin"] != null && (bool)Session["IsAdmin"] == true;}
-            
+            get { return Session["IsAdmin"] != null && (bool) Session["IsAdmin"] == true; }
+
         }
 
         private Post GetPost(int? id)
         {
             //return id.HasValue ? _modelEntities.Posts.First(x => x.Id == id) : new Post() { Id = (int) id};
             if (id.HasValue)
-            {
+            
                 return _modelEntities.Posts.First(x => x.Id == id);
-            }
             else
-            {
-                return new Post() { Id = -1 };
-            }
+                return new Post() {Id = -1};
+            
         }
 
 
+
     }
+
 }

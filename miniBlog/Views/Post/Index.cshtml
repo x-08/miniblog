@@ -11,75 +11,75 @@
 
 @foreach (Post post in Model.Posts)
 {
-   
-    <div class="posttitle">
-        <a href="@Href("~/Post/Details/" + post.Id)">@post.Title</a>
-    </div>
-    <div class="postcontainer">
-        <div class="datetab">
-            <div class="month">@post.Time.ToString().ToUpper()</div>
-            @*<div class="date">@post.Time.ToString("DD").ToUpper()</div>*@
-        </div>
-        <div class=" contentBody">
-            <div class="postBody">
-                
-@Html.Raw((@post.Body).Replace(Environment.NewLine, "<br />"))
 
-                @*@Html.Encode(@post.Body).Replace("\n", "<br/>")*@
+    <div class="row postclass">
+        <div class="posttitle">
+            <div class="row">
+                <div class="col-md-push-3 col-md-6 col-md-pull-3">
+                    <a href="@Href("~/Post/Details/" + post.Id)">@post.Title</a>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="postcontainer">
+            <div class="row">
+                <div class="col-md-push-1 col-md-10 col-md-pull-1">
+                    <div class="datetab">
+                         @{
+                            DateTime time = (DateTime)@post.Time;
+                         }
+                        <div class="month"><span class="month">@string.Format("{0:t}", @time)</span>
+                        <span class="date">@string.Format("{0:D}", @time)</span></div>
+
+                        
+
+                        <div class=" contentBody">
+                            <div class="postBody">
+
+                                @Html.Raw((@post.Body).Replace(Environment.NewLine, "<br />"))
+
+                                @*@Html.Encode(@post.Body).Replace("\n", "<br/>")*@
+
+                            </div>
+                        </div>
+                        @if (ViewBag.isAdmin)
+                        {
+                            <div class="Delete">
+                                <a href="@Href("~/Post/Delete/" + post.Id)">Delete Post</a>
+                            </div>
+                        }
+
+                    </div>
+
+                </div>
                 
             </div>
+
+
+
+
+
+
         </div>
-        @if (ViewBag.isAdmin)
-        {
-            <div class="Delete">
-                <a href="@Href("~/Post/Delete/" + post.Id)">Delete Post</a>
-            </div>
-        }
-        
         <div class="commentssection">
-            @foreach (Comment comment in post.Comments.OrderBy(x => x.Time))
-            {
-                <div>
-                    @comment.Time
+            <div class="row">
+                <div class="col-md-push-8 col-md-4">
+                    <div>
+                        
+                        
+                        <a href="@Href("~/Post/Details/" + post.Id + "#comments")"><span class="badge">@post.Comments.Count</span></a>
+                        <span class="glyphicon glyphicon-comment"></span>
+
+                    </div>
+
                 </div>
-                <div>
-                    @comment.Name
-                </div>
-                <div>
-                    @comment.Body
-                </div>
-    if (ViewBag.isAdmin)
-    {
-        <div class="Delete">
-            <a href="@Href("~/Post/DeleteComment/" + @comment.Id)">Delete Comment</a>
+            </div>
         </div>
-    }
 
-
-            }
-            @using (Html.BeginForm("PostComment", "Post", FormMethod.Post, null))
-            {
-                <input type="hidden" name="id" value="@post.Id" />
-
-                
-
-                <div>
-                    @Html.TextBox("name","name")
-
-                </div>
-                <div>
-                    @Html.TextBox("email","email")
-
-                </div>
-                <div>
-                    @Html.TextArea("body","body")
-
-                </div>
-                <input type="submit" value="Submit" />
-            }
-
-        </div>
     </div>
+
 
 
 

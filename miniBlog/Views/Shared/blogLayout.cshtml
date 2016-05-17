@@ -7,37 +7,37 @@
     <link href="~/Content/blogStyle.css" rel="stylesheet" />
     <link href="~/Content/bootstrap/css/bootstrap.css" rel="stylesheet"/>
     <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Special+Elite' rel='stylesheet' type='text/css'>
+
     <script src="~/Content/bootstrap/js/bootstrap.js"></script>
 </head>
 <body>
-<div>
-    @*<div class="container">
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Project name</a>
+
+
+    <div class="container ">
+        <div id="navigation">
+            <div class="row">
+
+                <div class="float-right">
+                    <p class="site-title">@Html.ActionLink("Login", "Login", "Admin")</p>
+ 
+
+
                 </div>
-                <div id="navbar" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>/.nav-collapse 
             </div>
-        </nav>
-    </div>*@
-    <div class="container fill-screen" style="background-image: url('../../Content/images/backImg.jpg')">
-        <div class="navigation">
+
+
 
         </div>
-        <div class="pageContent fill-screen">
+        <div id="blogcontainer" class="blogcontainer fill-screen">
+            <div id="blogTitle" class="blogtitle">
+                <div class="row">
+                    <div class="col-md-push-2 col-md-8 col-md-pull-2">
+                        <span>Digital Nomad</span>
+                    </div>
+                </div>
+
+            </div>
 
             <div class=" row">
                 <div class="col-md-push-2 col-md-8 col-md-pull-2">
@@ -51,6 +51,6 @@
     </div>
 
 
-</div>
+
 </body>
 </html>

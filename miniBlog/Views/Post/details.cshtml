@@ -8,7 +8,105 @@
 }
 
 <h2>@Model.Title</h2>
-<div class="posttitle">
+<div class="row postclass">
+    <div class="posttitle">
+        <div class="row">
+            <div class="col-md-push-3 col-md-6 col-md-pull-3">
+                <a href="@Href("~/Post/Details/" + @Model.Id)">@Model.Title</a>
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="postcontainer">
+        <div class="row">
+            <div class="col-md-push-1 col-md-10 col-md-pull-1">
+                <div class="datetab">
+                    @{
+                        DateTime time = (DateTime)@Model.Time;
+                    }
+                    <div class="month">
+                        <span class="month">@string.Format("{0:t}", @time)</span>
+                        <span class="date">@string.Format("{0:D}", @time)</span>
+                    </div>
+
+
+
+                    <div class=" contentBody">
+                        <div class="postBody">
+
+                            @Html.Raw((@Model.Body).Replace(Environment.NewLine, "<br />"))
+
+                            @*@Html.Encode(@Model.Body).Replace("\n", "<br/>")*@
+
+                        </div>
+                    </div>
+                    @if (ViewBag.isAdmin)
+                    {
+                        <div class="Delete">
+                            <a href="@Href("~/Post/Delete/" + @Model.Id)">Delete Post</a>
+                        </div>
+                    }
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+    <div class="commentssection">
+        <div class="row">
+            <div class="col-md-push-8 col-md-4">
+                <div>
+                    @foreach (Comment comment in @Model.Comments.OrderBy(x => x.Time))
+                    {
+                        <div>
+                            @comment.Time
+                        </div>
+                        <div>
+                            @comment.Name
+                        </div>
+                        <div>
+                            @comment.Body
+                        </div>
+
+                    }
+                    @using (Html.BeginForm("PostComment", "Post", FormMethod.Post, null))
+                    {
+                        <input type="hidden" name="id" value="@Model.Id" />
+
+
+        <div class="input-group input-group-sm">
+            @Html.TextBox("name", "name")
+
+        </div>
+        <div class="input-group input-group-sm">
+            @Html.TextBox("email", "email")
+
+        </div>
+        <div class="">
+            @Html.TextArea("body", "body")
+
+        </div>
+        <input type="submit" value="Submit" class="btn btn-success" />
+        }
+
+</div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@*<div class="posttitle">
     <a href="@Href("~/Post/Details/" + @Model.Id)">@Model.Title</a>
 </div>
 <div class="postcontainer">
@@ -18,15 +116,15 @@
         
             
     }
-    <div class="month">@time.ToString("MMM").ToUpper()</div>
-    <div class="date">@time.ToString("DD").ToUpper()</div>
+    <span class="month">@string.Format("{0:t}", @time)</span>
+    <span class="date">@string.Format("{0:D}", @time)</span>
 </div>
     <div class=" contentBody">
         <div class="postBody">
             @Html.Encode(@Model.Body).Replace("\n", "<br/>")
         </div>
     </div>
-<div class="commentssection">
+<div id ="comments" class="commentssection">
     @foreach (Comment comment in @Model.Comments.OrderBy(x=>x.Time))
     {
         <div>
@@ -40,25 +138,26 @@
         </div>
 
     }
-    @using (Html.BeginForm("UpdatePost", "Post", FormMethod.Post, null))
-    {
+           @using (Html.BeginForm("PostComment", "Post", FormMethod.Post, null))
+            {
+                <input type="hidden" name="id" value="@Model.Id" />
 
-        <input type="hidden" name="id" value="@Model.Id"/>
+                
 
-        <div>
-            @Html.TextBox("Enter Name", "Name")
+                <div>
+                    @Html.TextBox("name","name")
 
-        </div>
-        <div>
-            @Html.TextArea("Enter email", "Email")
+                </div>
+                <div>
+                    @Html.TextBox("email","email")
 
-        </div>
-        <div>
-            @Html.TextArea("Comment", "comments")
+                </div>
+                <div>
+                    @Html.TextArea("body","body")
 
-        </div>
-        <input type="submit" value="Submit"/>
-    }
+                </div>
+                <input type="submit" value="Submit" />
+            }
 
 </div>
-    </div>
+    </div>*@

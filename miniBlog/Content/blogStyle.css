@@ -1,13 +1,122 @@
-﻿body {
-    
+﻿html {
+    background-color: #e2e2e2;
+    margin: 0;
+    padding: 0;
 }
 
-.fill-screen {
+body {
+    /*background-color: black;*/
+    color: #333;
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    /*position: fixed;*/
+    /*background-color: turquoise;*/
+    /*padding: 0;*/
+    /*background-image: url('images/pexels-photo-92866.jpeg');*/
+    background-image: url('images/pexels-photo-25349.jpg');
+    /*background-image: url('images/2.jpeg');*/
+    /*background-image: url('images/pexels-photo-92129.jpeg');*/
+    /*background-image: url('images/backImg.jpg');*/
+    /*background-image: url('images/px_by_Gre3g_@2X.png');*/
+    /*/*background-image: url('images/dark_embroidery.png');*/
     background-size: cover;
-    background-position: center;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-   s   
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    z-index: 5;
 }
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+/*.blogtitle {
+    min-height: 100px;
+    background-color: transparent;
+}*/
+ .posttitle{
+      font-size: 1.75em;
+     font-family: 'Special Elite', cursive;
+     
+    
+}
+ .datetab {
+     
+     font-size: 16px;
+     padding-bottom: 10px;
+     font-family: 'Special Elite', cursive;
+     color: gold;
+
+ }
+ .contentBody{
+     padding-top: 12px;
+     font-family: 'Roboto', sans-serif;
+     text-align: justify;
+     /*color:whitesmoke;*/
+     color: wheat;
+      
+    
+   
+ }
+ .postclass {
+     background-color: black;
+     opacity: 1;
+    /*transition: opacity .25s ease-in-out;*/
+     z-index: 15;
+ }
+ .commentssection {
+     padding-top: 10px;
+     
+     margin-bottom: 30px
+          
+ }
+ .postclass {
+     margin-bottom: 15px
+ }
+ .commentbody {
+     padding: 5px
+ }
+ .blogcontainer {
+         width: 900px;
+    /*text-align: justify;*/
+    margin: 0px auto;
+    margin-bottom: 50px;
+    float: none;
+     background-color: #252525;
+     opacity: 0.7;
+     z-index: 10;
+      
+    
+     
+ }
+.blogtitle {
+    padding-top: 40px;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    min-height: 300px;
+    /*background-image: url('images/pexels-photo-92866.jpeg');*/
+    /*background-image: url('images/backImg.jpg');*/
+    background-size:     cover;                   
+    background-repeat:   no-repeat;
+    background-position: center center;
+    color: whitesmoke;
+
+}
+ .mainContent {
+     /*overflow-y: scroll;*/
+     
+     text-align: center;
+    
+ }
+ .background-tint {
+  background-color: rgba(200,100,0,.5); 
+  background-blend-mode: multiply;
+}
+ .editable {
+     background-color: whitesmoke;
+     min-height: 300px !important;
+ }

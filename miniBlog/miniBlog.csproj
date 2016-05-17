@@ -217,6 +217,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\blogStyle.css" />
+    <Content Include="Content\bootflat.css" />
     <Content Include="Content\bootstrap\css\bootflat.min.css" />
     <Content Include="Content\bootstrap\css\bootstrap-theme.css" />
     <Content Include="Content\bootstrap\css\bootstrap-theme.min.css" />
@@ -226,7 +227,33 @@
     <Content Include="Content\bootstrap\js\bootstrap.js" />
     <Content Include="Content\bootstrap\js\bootstrap.min.js" />
     <Content Include="Content\bootstrap\js\npm.js" />
+    <Content Include="Content\dist\css\medium-editor.css" />
+    <Content Include="Content\dist\css\medium-editor.min.css" />
+    <Content Include="Content\dist\css\themes\beagle.css" />
+    <Content Include="Content\dist\css\themes\beagle.min.css" />
+    <Content Include="Content\dist\css\themes\bootstrap.css" />
+    <Content Include="Content\dist\css\themes\bootstrap.min.css" />
+    <Content Include="Content\dist\css\themes\default.css" />
+    <Content Include="Content\dist\css\themes\default.min.css" />
+    <Content Include="Content\dist\css\themes\flat.css" />
+    <Content Include="Content\dist\css\themes\flat.min.css" />
+    <Content Include="Content\dist\css\themes\mani.css" />
+    <Content Include="Content\dist\css\themes\mani.min.css" />
+    <Content Include="Content\dist\css\themes\roman.css" />
+    <Content Include="Content\dist\css\themes\roman.min.css" />
+    <Content Include="Content\dist\css\themes\tim.css" />
+    <Content Include="Content\dist\css\themes\tim.min.css" />
+    <Content Include="Content\dist\js\medium-editor.js" />
+    <Content Include="Content\dist\js\medium-editor.min.js" />
+    <Content Include="Content\images\2.jpeg" />
     <Content Include="Content\images\backImg.jpg" />
+    <Content Include="Content\images\dark_embroidery.png" />
+    <Content Include="Content\images\pexels-photo-25349.jpg" />
+    <Content Include="Content\images\pexels-photo-92129.jpeg" />
+    <Content Include="Content\images\pexels-photo-92866.jpeg" />
+    <Content Include="Content\images\px_by_Gre3g_%402X.png" />
+    <Content Include="Content\medium.css" />
+    <Content Include="Content\medium.min.js" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
