@@ -8,7 +8,7 @@ using miniBlog.Models;
 
 namespace miniBlog.Controllers
 {
-    public class AdminController : Controller
+    public class AdminController : BaseController
     {
         //
         // GET: /Admin/
@@ -39,8 +39,17 @@ namespace miniBlog.Controllers
 
         public ActionResult Login()
         {
-            Session["IsAdmin"] = null;
-            return View();
+            if (Session["IsAdmin"] != null && (bool) Session["IsAdmin"] == true)
+            {
+                return RedirectToAction("Logout");
+            }
+            else
+            {
+                Session["IsAdmin"] = null;
+                return View();
+                
+            }
+            
         }
 
 

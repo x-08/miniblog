@@ -184,6 +184,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\PostController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -218,39 +219,24 @@
   <ItemGroup>
     <Content Include="Content\blogStyle.css" />
     <Content Include="Content\bootflat.css" />
-    <Content Include="Content\bootstrap\css\bootflat.min.css" />
-    <Content Include="Content\bootstrap\css\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap\css\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap\css\bootstrap.css" />
     <Content Include="Content\bootstrap\css\bootstrap.min.css" />
     <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Content\bootstrap\js\bootstrap.js" />
-    <Content Include="Content\bootstrap\js\bootstrap.min.js" />
-    <Content Include="Content\bootstrap\js\npm.js" />
     <Content Include="Content\dist\css\medium-editor.css" />
     <Content Include="Content\dist\css\medium-editor.min.css" />
-    <Content Include="Content\dist\css\themes\beagle.css" />
-    <Content Include="Content\dist\css\themes\beagle.min.css" />
-    <Content Include="Content\dist\css\themes\bootstrap.css" />
-    <Content Include="Content\dist\css\themes\bootstrap.min.css" />
     <Content Include="Content\dist\css\themes\default.css" />
     <Content Include="Content\dist\css\themes\default.min.css" />
-    <Content Include="Content\dist\css\themes\flat.css" />
-    <Content Include="Content\dist\css\themes\flat.min.css" />
-    <Content Include="Content\dist\css\themes\mani.css" />
-    <Content Include="Content\dist\css\themes\mani.min.css" />
-    <Content Include="Content\dist\css\themes\roman.css" />
-    <Content Include="Content\dist\css\themes\roman.min.css" />
-    <Content Include="Content\dist\css\themes\tim.css" />
-    <Content Include="Content\dist\css\themes\tim.min.css" />
     <Content Include="Content\dist\js\medium-editor.js" />
     <Content Include="Content\dist\js\medium-editor.min.js" />
     <Content Include="Content\images\2.jpeg" />
     <Content Include="Content\images\backImg.jpg" />
+    <Content Include="Content\images\city-cars-traffic-lights.jpg" />
     <Content Include="Content\images\dark_embroidery.png" />
+    <Content Include="Content\images\pexels-photo-14676.png" />
     <Content Include="Content\images\pexels-photo-25349.jpg" />
     <Content Include="Content\images\pexels-photo-92129.jpeg" />
     <Content Include="Content\images\pexels-photo-92866.jpeg" />
+    <Content Include="Content\images\pexels-photo-93046 %281%29.jpeg" />
     <Content Include="Content\images\px_by_Gre3g_%402X.png" />
     <Content Include="Content\medium.css" />
     <Content Include="Content\medium.min.js" />
@@ -347,8 +333,6 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\knockout-2.2.0.debug.js" />
-    <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -357,7 +341,6 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\bullet.png" />
@@ -373,21 +356,21 @@
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Post\EditPost.cshtml" />
     <Content Include="Views\Post\Index.cshtml" />
     <Content Include="Views\Post\Post.cshtml" />
     <Content Include="Views\Post\details.cshtml" />
     <Content Include="Views\Shared\Comments Partial.cshtml" />
     <Content Include="Views\Admin\Login.cshtml" />
     <Content Include="Views\Shared\blogLayout.cshtml" />
+    <Content Include="Views\Post\EditPost.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\bootstrap\js\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

@@ -1,21 +1,28 @@
-﻿@model miniBlog.Models.Comment
-@using (Html.BeginForm("PostComment", "Post", FormMethod.Post, null))
-            {
-    <input type="hidden" name="id" value="@post.Id" />
+﻿@using miniBlog.Models
+@model miniBlog.Models.Post
+
+
+@helper RenderComment(int commentPerpage)
+{
+    foreach (Comment comment in @Model.Comments.OrderBy(x => x.Time).Take(commentPerpage))
+    {
+        <li class="indiComments">
+            <div class="commentDate">
+                <span class="month">@string.Format("{0:t}", @comment.Time)</span>,
+                <span class="date">@string.Format("{0:D}", @comment.Time)</span>
+            </div>
+
+            <div class="">
+                <span class="commentName"><b>@comment.Name.ToUpper() :</b></span>
+                <span style="font-size:13px">
+
+                    @comment.Body
+
+                </span>
+            </div>
+        </li>
 
 
 
-    <div>
-        @Html.TextBoxFor(x => x.Name, new { @placeholder = "" })
-
-    </div>
-    <div>
-        @Html.TextBoxFor(x=>x.Email,new {@placeholder = "Email"})
-
-    </div>
-    <div>
-        @Html.TextAreaFor(x=>x.Body,new{@placeholder=""})
-
-    </div>
-    <input type="submit" value="Submit" />
-            }
+    }
+}

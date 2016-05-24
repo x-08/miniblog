@@ -14,13 +14,16 @@ body {
     /*background-color: turquoise;*/
     /*padding: 0;*/
     /*background-image: url('images/pexels-photo-92866.jpeg');*/
-    background-image: url('images/pexels-photo-25349.jpg');
+    /*background-image: url('images/pexels-photo-25349.jpg');*/
+    /*background-image: url('images/city-cars-traffic-lights.jpg');*/
+    /*background-image: url('images/pexels-photo-14676.png');*/
+    background-image: url('images/pexels-photo-93046 (1).jpeg');
     /*background-image: url('images/2.jpeg');*/
     /*background-image: url('images/pexels-photo-92129.jpeg');*/
     /*background-image: url('images/backImg.jpg');*/
     /*background-image: url('images/px_by_Gre3g_@2X.png');*/
     /*/*background-image: url('images/dark_embroidery.png');*/
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -31,6 +34,10 @@ body {
 }
 .float-right {
     float: right;
+    position: fixed;
+}
+#navigation {
+        float: right;
 }
 /*.blogtitle {
     min-height: 100px;
@@ -114,9 +121,101 @@ body {
  }
  .background-tint {
   background-color: rgba(200,100,0,.5); 
-  background-blend-mode: multiply;
+
 }
  .editable {
      background-color: whitesmoke;
-     min-height: 300px !important;
+     min-height: 400px !important;
  }
+ .editableTitle {
+         min-width: 400px;
+    /* min-zoom: initial; */
+    min-height: 50px;
+    margin-bottom: 30px;
+}
+ .PageTitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+     color: gold;
+ }
+ .publishButton {
+     margin-top: 10px;
+ }
+ .postControl {
+     float: left;
+     margin-top: 50px;
+     
+ }
+ .commentPost {
+     /*background-color: whitesmoke;*/
+ }
+ .comments {
+     overflow-y: scroll;
+     max-height: 300px;
+     
+ }
+ .indiComments {
+     opacity: 0.9;
+      border-radius: 25px;
+    border: 2px solid #73AD21;
+     margin-bottom: 2px;
+     color: whitesmoke;
+     width: 70%;
+     font-size: 10px;
+     font-family: 'Roboto', sans-serif;
+     
+ }
+ .commentName {
+     color: #3bafda;
+     font-size: 14px;
+    
+ }
+ .commentDate {
+      
+     font-size: 12px;
+     
+ }
+ .CommentBox{
+     margin-top: 50px;
+          opacity: 0.9;
+      border-radius: 5px;
+    border: 2px solid #73AD21;
+     margin-bottom: 2px;
+     color: whitesmoke;
+     width: 100%;
+     font-size: 10px;
+     font-family: 'Roboto', sans-serif;
+ }
+ #style-4::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+#style-4::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-4::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #555555;
+}
+
+.glyphicon.glyphicon-off {
+    font-size: 20px;
+    color: black;
+}
+.glyphicon.glyphicon-pencil {
+    font-size: 20px;
+    color: black;
+}
+.glyphicon.glyphicon-home {
+    font-size: 20px;
+    color: black;
+}
+.homeicon {
+    margin-top: 5px;
+}

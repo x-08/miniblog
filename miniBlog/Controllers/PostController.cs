@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
+using System.Data.Metadata.Edm;
 using System.EnterpriseServices;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -7,10 +9,12 @@ using System.Web;
 using System.Web.Mvc;
 using DotNetOpenAuth.OpenId.Extensions.SimpleRegistration;
 using miniBlog.Models;
+using Microsoft.Ajax.Utilities;
 
 namespace miniBlog.Controllers
 {
-    public class PostController : Controller
+ 
+    public class PostController : BaseController
     {
         //
         // GET: /Post/
@@ -58,12 +62,12 @@ namespace miniBlog.Controllers
         }
 
         [ValidateInput(false)]
-        public ActionResult PostComment(int id, string name, string email, string body)
+        public ActionResult PostComment(int id, string name, string email, string commentBody)
         {
 
             Post post = GetPost(id);
 
-            Comment comment = new Comment {Name = name, Email = email, Body = body, PostId = id, Time = DateTime.Now};
+            Comment comment = new Comment {Name = name, Email = email, Body = commentBody, PostId = id, Time = DateTime.Now};
             _modelEntities.Comments.Add(comment);
             _modelEntities.SaveChanges();
             return RedirectToAction("Details", new {id = id});
@@ -72,6 +76,7 @@ namespace miniBlog.Controllers
 
 
         }
+
 
         public ActionResult Delete(int id)
         {
@@ -89,14 +94,25 @@ namespace miniBlog.Controllers
 
         public ActionResult DeleteComment(int id)
         {
+            
             if (IsAdmin)
             {
-                Comment comment = _modelEntities.Comments.First(x => x.Id == id);
+                
+                Comment comment = _modelEntities.Comments.First(x => x.Id== id);
+                int postId = comment.PostId;
                 _modelEntities.Comments.Remove(comment);
                 _modelEntities.SaveChanges();
+                return RedirectToAction("Details", new { id = postId });
+               
 
             }
-            return RedirectToAction("Index");
+            else
+            {
+                return RedirectToAction("Index");
+                
+
+            }
+            
         }
 
         public ActionResult Details(int id)
@@ -120,11 +136,11 @@ namespace miniBlog.Controllers
             return View("EditPost", post);
         }
 
-        public bool IsAdmin
-        {
-            get { return Session["IsAdmin"] != null && (bool) Session["IsAdmin"] == true; }
+        //public bool IsAdmin
+        //{
+        //    get { return Session["IsAdmin"] != null && (bool) Session["IsAdmin"] == true; }
 
-        }
+        //}
 
         private Post GetPost(int? id)
         {
