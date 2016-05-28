@@ -40,16 +40,10 @@
 
                                 @Html.Raw((@post.Body).Replace(Environment.NewLine, "<br />"))
 
-                                @*@Html.Encode(@post.Body).Replace("\n", "<br/>")*@
+                              
 
                             </div>
                         </div>
-                        @if (ViewBag.isAdmin)
-                        {
-                            <div class="Delete">
-                                <a href="@Href("~/Post/Delete/" + post.Id)">Delete Post</a>
-                            </div>
-                        }
 
                     </div>
 
@@ -65,12 +59,22 @@
         </div>
         <div class="commentssection">
             <div class="row">
-                <div class="col-md-push-8 col-md-4">
+                <div class="col-md-push-1 col-md-3">
+                    @if (ViewBag.isAdmin)
+                    {
+                        <div class="Delete btn btn-danger">
+                            <a type="button" href="@Href("~/Post/Delete/" + post.Id)">Delete Post</a>
+                        </div>
+                    }
+
+
+                </div>
+                <div class="col-md-push-4 col-md-4">
                     <div>
-                        
-                        
+
+
                         <a href="@Href("~/Post/Details/" + post.Id + "#CommentBox")"><span class="badge"><span class="glyphicon glyphicon-comment">&nbsp;@post.Comments.Count</span></span></a>
-                        
+
 
                     </div>
 
@@ -84,34 +88,40 @@
 
 
 }
-   
 
-@{
-        int pagenumber = ViewBag.pageNumber;
-        if (ViewBag.isPreviousLinkAvailable)
-        {
-            int previousPageNumber = pagenumber - 1;
-            //Html.RenderAction("Post", "Index", previousPageNumber);
-            <div>
-                @Html.ActionLink("Previous", "Index", "Post", new { id = previousPageNumber }, null)
-            </div>
+<div class="row">
+    <div class="col-md-push-3 col-md-6 col-md-pull-3 PNlinks">
 
-
-        }
-
-    
+        @{
+            int pagenumber = ViewBag.pageNumber;
+            if (ViewBag.isPreviousLinkAvailable)
+            {
+                int previousPageNumber = pagenumber - 1;
+                //Html.RenderAction("Post", "Index", previousPageNumber);
+                <span>
+                    @Html.ActionLink("Previous", "Index", "Post", new { id = previousPageNumber }, null)
+                </span>
 
 
-    
-        if (ViewBag.isNextLinkAvailable)
-        {
-            int nextPageNumber = pagenumber + 1;
-            //Html.RenderAction("Post", "Index", previousPageNumber);
-            <div>
-                @Html.ActionLink("Next", "Index", "Post", new { id = nextPageNumber }, null)
-            </div>
+            }
 
-        }
 
-    }
+
+
+
+            if (ViewBag.isNextLinkAvailable)
+            {
+                int nextPageNumber = pagenumber + 1;
+                //Html.RenderAction("Post", "Index", previousPageNumber);
+                <span>
+                    @Html.ActionLink("Next", "Index", "Post", new { id = nextPageNumber }, null)
+                </span>
+
+            }
+
+}
+    </div>
+
+</div>
+
 

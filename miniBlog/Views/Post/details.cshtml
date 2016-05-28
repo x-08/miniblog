@@ -7,7 +7,6 @@
     
 }
 
-<h2>@Model.Title</h2>
 <div class="row postclass">
     <div class="posttitle">
         <div class="row">
@@ -21,10 +20,10 @@
     </div>
     <div class="postcontainer">
         <div class="row">
-            <div class="col-md-push-1 col-md-10 col-md-pull-1">
+            <div class="col-md-push-1 col-md-10 col-md-pull-1 col-xs-12">
                 <div class="datetab">
                     @{
-                        DateTime time = (DateTime) @Model.Time;
+                        DateTime time = (DateTime)@Model.Time;
                     }
                     <div class="month">
                         <span class="month">@string.Format("{0:t}", @time)</span>
@@ -45,14 +44,14 @@
                 </div>
                 @if (ViewBag.isAdmin)
                 {<div class="postControl">
-                     <span class="Edit btn btn- btn-warning">
-                             <a type="button" href="@Href("~/Post/EditPost/" + @Model.Id)">Edit Post</a>
-                         </span>
-                     <span class="Delete btn btn-danger">
-                             <a type ="button" href="@Href("~/Post/Delete/" + @Model.Id)">Delete Post</a>
-                         </span>
+                    <span class="Edit btn btn- btn-warning">
+                        <a type="button" href="@Href("~/Post/EditPost/" + @Model.Id)">Edit Post</a>
+                    </span>
+                    <span class="btn btn-danger">
+                        <a type="button" href="@Href("~/Post/Delete/" + @Model.Id)">Delete Post</a>
+                    </span>
 
-                 </div>
+                </div>
 
 
                 }
@@ -60,6 +59,7 @@
 
 
             </div>
+
 
         </div>
 
@@ -71,7 +71,7 @@
     </div>
     <div class="commentssection">
         <div class="row">
-            <div class="col-md-push-3 col-md-6 col-md-pull-3">
+            <div class="col-md-push-3 col-md-6 col-md-pull-3 col-xs-12">
                 <div>
                     @*<div class="">
                     <div class="events  commentPost">
@@ -125,7 +125,7 @@
                 </div>
                 <div class="commentssection">
                     <div class="row">
-                        <div id="style-4"class="comments">
+                        <div id="style-4" class="comments ">
                             <ul style="list-style-type: none">
 
 
@@ -145,14 +145,14 @@
 
                                             </span>
                                         </div>
-@if (ViewBag.isAdmin)
-{
-        <div>
-                                            <a href="@Href("~/Post/DeleteComment/" + @comment.Id)"><span class="glyphicon glyphicon-trash"></span></a>
-                                        </div>
-    
-}
-                                    
+                                        @if (ViewBag.isAdmin)
+                                        {
+                                            <div>
+                                                <a href="@Href("~/Post/DeleteComment/" + @comment.Id)"><span class="glyphicon glyphicon-trash"></span></a>
+                                            </div>
+
+                                        }
+
                                     </li>
 
 
@@ -162,38 +162,44 @@
                             </ul>
                         </div>
                     </div>
-                    <div id="CommentBox" class="CommentBox">
+                    <div class="row">
+                        <div class="col-md-push-1 col-md-10 col-md-pull-1 col-xs-push-1 col-xs-9 col-xs-pull-2">
+                            <div id="CommentBox" class="CommentBox">
 
-                        @using (Html.BeginForm("PostComment", "Post", FormMethod.Post, null))
-                        {
-                            <input type="hidden" name="id" value="@Model.Id" />
+                                @using (Html.BeginForm("PostComment", "Post", FormMethod.Post, null))
+                                {
+                                    <input type="hidden" name="id" value="@Model.Id" />
 
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <span class="input-group-addon">Name</span>
-                                    <input id=" name" name="name" type="text" class="form-control" placeholder="Your Name">
-                                </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">Name</span>
+                                            <input id=" name" name="name" type="text" class="form-control" placeholder="Your Name" required="required">
+                                        </div>
 
-                                <div class="input-group">
-                                    <span class="input-group-addon">Email&nbsp;</span>
-                                    <input id=" email" name="email" type="text" class="form-control" placeholder="Your Email">
-                                </div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">Email&nbsp;</span>
+                                            <input id=" email" name="email" type="email" class="form-control" placeholder="Your Email" required="required">
+                                        </div>
 
-                                <div class="input-group">
-                                    <span class="input-group-addon">Comment</span>
-                                    <textarea id=" commentBody" name="commentBody" type="text" class="form-control" placeholder="Your Comment"></textarea>
-                                </div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">Comment</span>
+                                            <textarea id=" commentBody" name="commentBody" type="text" class="form-control" placeholder="Your Comment" required="required"></textarea>
+                                        </div>
 
-                                <div>
-                                    <button type="submit" value="Submit" class="btn btn-success">Add comment</button>
-                                </div>
+                                        <div>
+                                            <button type="submit" value="Submit" class="btn btn-success">Add comment</button>
+                                        </div>
+                                    </div>
+
+
+
+
+                                }
                             </div>
 
-
-
-
-                        }
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>

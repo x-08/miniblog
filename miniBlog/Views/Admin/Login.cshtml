@@ -3,19 +3,34 @@
     
     //git commit check
 }
+<div class="row loginclass fixbackground">
+    <div class="col-md-push-3 col-md-6 col-md-pull-3">
+        @using (Html.BeginForm("LoginVerify", "Admin", FormMethod.Post, null))
+        {
+            <div>
+                @*@Html.Label("Enter Username")
+                    @Html.TextBox("name", "name")*@
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">Name</span>
+                        <input id=" name" name="name" type="text" class="form-control" placeholder="Enter Username" required="required">
+                    </div>
+                </div>
+            </div>
+            <div>
+                @*@Html.Label("Enter Password")
+                    @Html.Password("password", "password")*@
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">Password</span>
+                        <input id=" password" name="password" type="password" class="form-control" placeholder="Enter Password" required="required">
+                    </div>
+                </div>
 
-@using (Html.BeginForm("LoginVerify", "Admin", FormMethod.Post, null))
-{
-    <div>
-        @Html.Label("Enter Username")
-        @Html.TextBox("name", "name")
+            </div>
 
+            <input type="submit" value="LogOn" name="LogOn" />
+        }
     </div>
-    <div>
-        @Html.Label("Enter Password")
-        @Html.Password("password", "password")
+</div>
 
-    </div>
-
-    <input type="submit" value="Submit" name="LogOn" />
-}

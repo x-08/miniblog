@@ -6,7 +6,6 @@
     <title>blogLayout</title>
     <link href="~/Content/blogStyle.css" rel="stylesheet" />
     <link href="~/Content/bootstrap/css/bootstrap.css" rel="stylesheet"/>
-    <link href="~/Content/bootflat.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Special+Elite' rel='stylesheet' type='text/css'>
 
@@ -15,51 +14,59 @@
 <body>
 
 
-    <div class="container ">
-        <div id="navigation">
-            <div class ="float-right">
+<div class="container">
+    <div class="row">
+        <div id="navigation " class="row">
+            <div class=" col-md-push-10 col-md-2 col-xs-push-3 col-xs-6 col-xs-pull-3" style="position: fixed">
 
-                
+
                 @*<p class="site-title">@Html.ActionLink("Login", "Login", "Admin")</p>*@
                 <span class="badge"><a href="@Href("~/Admin/Login")"><span class="glyphicon glyphicon-off"></span></a></span>
-                <div class="homeicon">
+                <span class="homeicon">
                     <span class="badge"><a href="@Href("~/Post/Index/")"><span class="glyphicon glyphicon-home"></span></a></span>
-                </div>
+                </span>
                 @if (ViewBag.isAdmin)
                 {
-                    <div class="homeicon">
+                    <span class="homeicon">
                         <span class="badge"><a href="@Href("~/Post/EditPost/")"><span class="glyphicon glyphicon-pencil"></span></a></span>
-                    </div>
+                    </span>
                 }
 
 
 
 
-</div>
+            </div>
 
 
 
         </div>
-        <div id="blogcontainer" class="blogcontainer fill-screen">
-            <div id="blogTitle" class="blogtitle">
-                <div class="row">
-                    <div class="col-md-push-2 col-md-8 col-md-pull-2">
-                        <span>To Do Title</span>
+        <div class="">
+            <div class="col-md-push-2 col-md-8 col-md-pull-2  col-xs-12 ">
+                <div id="blogcontainer" class="blogcontainer fill-screen">
+                    <div id="blogTitle" class="blogtitle">
+                        <div class="row">
+                            <div class="col-md-push-2 col-md-8 col-md-pull-2 col-xs-push-3 col-xs-6 col-xs-pull-3">
+                                <span>To Do Title</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class=" row">
+                        <div class="col-md-push-1 col-md-10 col-md-pull-1 col-xs-12 ">
+                            <section class="mainContent">
+                                @RenderBody()
+                            </section>
+
+                        </div>
                     </div>
                 </div>
-
-            </div>
-
-            <div class=" row">
-                <div class="col-md-push-2 col-md-8 col-md-pull-2">
-                    <section class="mainContent">
-                        @RenderBody()
-                    </section>
-
-                </div>
             </div>
         </div>
+        
     </div>
+    
+</div>
 
 
 
