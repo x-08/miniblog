@@ -116,14 +116,20 @@ body {
 
 }
  .editable {
-     background-color: whitesmoke;
+     color: whitesmoke;
+     background-color: black;
      min-height: 400px !important;
+      font-family: 'Roboto', sans-serif;
+    font-size: large;
  }
  .editableTitle {
          min-width: 400px;
     /* min-zoom: initial; */
     min-height: 50px;
     margin-bottom: 30px;
+    background-color: Black;
+    color: whitesmoke;
+    font-size: -webkit-xxx-large;
 }
  .PageTitle {
     font-family: 'Roboto', sans-serif;
