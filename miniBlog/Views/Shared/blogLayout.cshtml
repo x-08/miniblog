@@ -16,27 +16,28 @@
 
 <div class="container">
     <div class="row">
-        <div id="navigation " class="row">
-            <div class=" col-md-push-10 col-md-2 col-xs-push-3 col-xs-6 col-xs-pull-3" style="position: fixed">
+        <div class="row">
+            <div id="navigation ">
+                <div class=" col-md-push-10 col-md-2 col-xs-push-7 col-xs-5 navigationclass">
 
 
-                @*<p class="site-title">@Html.ActionLink("Login", "Login", "Admin")</p>*@
-                <span class="badge"><a href="@Href("~/Admin/Login")"><span class="glyphicon glyphicon-off"></span></a></span>
-                <span class="homeicon">
-                    <span class="badge"><a href="@Href("~/Post/Index/")"><span class="glyphicon glyphicon-home"></span></a></span>
-                </span>
-                @if (ViewBag.isAdmin)
-                {
+                    @*<p class="site-title">@Html.ActionLink("Login", "Login", "Admin")</p>*@
+                    <span class="badge"><a href="@Href("~/Admin/Login")"><span class="glyphicon glyphicon-off"></span></a></span>
                     <span class="homeicon">
-                        <span class="badge"><a href="@Href("~/Post/EditPost/")"><span class="glyphicon glyphicon-pencil"></span></a></span>
+                        <span class="badge"><a href="@Href("~/Post/Index/")"><span class="glyphicon glyphicon-home"></span></a></span>
                     </span>
+                    @if (ViewBag.isAdmin)
+                {
+                        <span class="homeicon">
+                            <span class="badge"><a href="@Href("~/Post/EditPost/")"><span class="glyphicon glyphicon-pencil"></span></a></span>
+                        </span>
                 }
 
 
 
 
+                </div>
             </div>
-
 
 
         </div>
@@ -45,7 +46,7 @@
                 <div id="blogcontainer" class="blogcontainer fill-screen">
                     <div id="blogTitle" class="blogtitle">
                         <div class="row">
-                            <div class="col-md-push-2 col-md-8 col-md-pull-2 col-xs-push-3 col-xs-6 col-xs-pull-3">
+                            <div class="col-md-push-2 col-md-8 col-md-pull-2 col-xs-push-1 col-xs-10 col-xs-pull-1">
                                 <span>To Do Title</span>
                             </div>
                         </div>

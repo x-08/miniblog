@@ -115,6 +115,9 @@ body {
   background-color: rgba(200,100,0,.5); 
 
 }
+     .navigationclass {
+        position: fixed;
+    }
  .editable {
      color: whitesmoke;
      background-color: black;
@@ -247,6 +250,13 @@ body {
     padding-right: 3px;
     margin-left: 5px;
     margin-right: 5px;
+    }
+    .navigationclass {
+        position: relative;
+    }
+    .editableTitle {
+        width: 100%;
+        min-width: 0;
     }
 }
 .PNlinks {

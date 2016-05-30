@@ -15,7 +15,7 @@
     <div class="row postclass">
         <div class="posttitle">
             <div class="row">
-                <div class="col-md-push-3 col-md-6 col-md-pull-3">
+                <div class="col-md-push-3 col-md-6 col-md-pull-3 col-xs-12">
                     <a href="@Href("~/Post/Details/" + post.Id)">@post.Title</a>
 
                 </div>
@@ -25,7 +25,7 @@
         </div>
         <div class="postcontainer">
             <div class="row">
-                <div class="col-md-push-1 col-md-10 col-md-pull-1">
+                <div class="col-md-push-1 col-md-10 col-md-pull-1 col-xs-12">
                     <div class="datetab">
                          @{
                             DateTime time = (DateTime)@post.Time;
@@ -59,7 +59,7 @@
         </div>
         <div class="commentssection">
             <div class="row">
-                <div class="col-md-push-1 col-md-3">
+                <div class="col-md-push-1 col-md-3 col-xs-12">
                     @if (ViewBag.isAdmin)
                     {
                         <div class="Delete btn btn-danger">
@@ -69,7 +69,7 @@
 
 
                 </div>
-                <div class="col-md-push-4 col-md-4">
+                <div class="col-md-push-4 col-md-4 col-xs-12">
                     <div>
 
 
