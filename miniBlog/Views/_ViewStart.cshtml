@@ -1,3 +1,13 @@
 ﻿@{
-    Layout = "~/Views/Shared/BlogLayout.cshtml";
+    var controller = HttpContext.Current.Request.RequestContext.RouteData.Values["Controller"].ToString();
+    if (controller.Equals("message"))
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/BlogLayout.cshtml";
+
+    }
+
 }
